@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D4DC2E16-FD82-4A87-900B-D50746E98BB6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Memorija</RootNamespace>
+    <AssemblyName>Memorija</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMemorija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemorija.Designer.cs">
+      <DependentUpon>frmMemorija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPocetna.Designer.cs">
+      <DependentUpon>frmPocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMemorija.resx">
+      <DependentUpon>frmMemorija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPocetna.resx">
+      <DependentUpon>frmPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cover.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slika2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slika2 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img39.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img46.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img47.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img49.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img53.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img54.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img57.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img58.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img59.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img63.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavnaPozadina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavnaPozadina2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glavnaPozadina3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadina141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2fd1d79f-4232-40f2-ab4a-16c48acf2ace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5b380ab0-8cc4-4bf3-a3a0-dd48318eff63.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\94f627f5-437b-4807-8279-8829c7ac6ff4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97ae4aaf-2d10-48a1-abf5-2ec6e967cf33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3027945a-740c-454c-9835-b25adf6f1a52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alpenstrasse - Hello 2015 _%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Cat Print Set of 3 Printable Black Cat Wall Art Cat _ Etsy %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Cat Print Set of 3 Printable Black Cat Wall Art Cat _ Etsy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No get that shit away - Funny.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poz2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pocetak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadinaPocetna.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
